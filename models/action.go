@@ -409,6 +409,7 @@ func CommitRepoAction(userId, repoUserId int64, userName, actEmail string,
 		}
 	}
 
+	go DeliverHooks()
 	return nil
 }
 
